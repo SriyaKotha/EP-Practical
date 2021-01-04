@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students_info>
+	<student>
+		<id>001</id>
+		<regno>100245</regno>
+		<name>Sriya</name>
+		<avg>92</avg>
+		<dob>24-03-2002</dob>
+		<time>9:15</time>
+		<mobile no="9849984900" />
+		<distinction>YES</distinction>
+	</student>
+
+	<student>
+		<id>002</id>
+		<regno>100246</regno>
+		<name>Monaa</name>
+		<avg>92</avg>
+		<dob>04-01-2002</dob>
+		<time>10:15</time>
+		<mobile no="9849984901" />
+		<distinction>YES</distinction>
+	</student>
+	
+	<student>
+		<id>003</id>
+		<regno>100247</regno>
+		<name>Lahari</name>
+		<avg>92</avg>
+		<dob>04-06-2002</dob>
+		<time>11:15</time>
+		<mobile no="9849479900" />
+		<distinction>YES</distinction>
+	</student>
+	
+	<student>
+		<id>004</id>
+		<regno>100248</regno>
+		<name>Priya</name>
+		<avg>92</avg>
+		<dob>15-08-1992</dob>
+		<time></time>
+		<mobile no="9849984900" />
+		<distinction>YES</distinction>
+	</student>
+	
+	<student>
+		<id>005</id>
+		<regno>100249</regno>
+		<name>ABC</name>
+		<avg>92</avg>
+		<dob>15-08-1992</dob>
+		<time></time>
+		<mobile no="9849984900" />
+		<distinction>YES</distinction>
+	</student>
+</students_info>
