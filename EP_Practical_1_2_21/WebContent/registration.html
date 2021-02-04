@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+
+function validation() {
+	
+	var regno = document.f1.regno.value;	
+	var name = document.f1.StdName.value;
+	var email = document.f1.emailid.value;
+	var pswd = document.f1.pswd.value;
+	var year = document.f1.year.value;
+	var sec = document.f1.sec.value;
+	
+	if (regno == null || regno == "") 
+	{
+		alert("Please enter a Registration Number");
+		return false;
+	}
+	else if (name == null || name == "") 
+	{
+		alert("Please enter a Name");
+		return false;
+	}
+	else if (email == null || email == "") 
+	{
+		alert("Please enter an Email");
+		return false;
+	}
+	else if (pswd == null || pswd == "") 
+	{
+		alert("Please enter an Password");
+		return false;
+	}
+	else if (year == null || year == "") 
+	{
+		alert("Please enter a Year");
+		return false;
+	}
+	else if (sec == null || sec == "") 
+	{
+		alert("Please enter a section");
+		return false;
+	}
+	else if (name.length < 8) 
+	{
+		alert("Name should have minimum of 8 characters");
+		return false;
+	}
+	else if(email.length < 10)
+	{
+		alert("Email should have minimum of 10 characters");
+		return false;
+	}
+	else if(!email.includes("@") || !email.includes("."))
+	{
+		alert("Invalid Email id must contain @ and .")
+		return false;
+	}
+}
+</script>
+
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="reg.css">
+<title>Registration</title>
+</head>
+
+<body>
+<form action="RegInsert" onSubmit="validation()" name="f1" method="post">
+<div class="a">
+<h2>Register Here</h2>
+</div>
+<table align="center">
+<tr><td><h1>Registration No:</h1></td><td><input type="text" name="regno" placeholder="Enter Registration Number"><br></td></tr>
+<tr><td><h1>Student Name:</h1></td><td><input type="text" name="StdName" placeholder="Enter Student Name"><br></td></tr>
+<tr><td><h1>Email ID:</h1></td><td><input type="text" name="emailid" placeholder="Enter Email Id"><br></td></tr>
+<tr><td><h1>Password :</h1></td><td><input type="password" name="pswd" placeholder="Enter Password"><br></td></tr>
+<tr><td><h1>Year:</h1></td><td><input type="text" name="year" placeholder="Enter Year"><br></td></tr>
+<tr><td><h1>Section:</h1></td><td><input type="text" name="sec" placeholder="Enter Sec"><br></td></tr>
+<tr><td><button class="b">Submit</button></td><td><a href="login.html">Already Registered? Login</a></td></tr> 
+</table>
+</form>
+</body>
+
+</html>

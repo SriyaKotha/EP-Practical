@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+
+function validation() {
+	
+	var email = document.f1.emailid.value;
+	var pswd = document.f1.pswd.value;
+
+	if (email == null || email == "") 
+	{
+		alert("Please enter an Email");
+		return false;
+	}
+	else if (pswd == null || pswd == "") 
+	{
+		alert("Please enter an Password");
+		return false;
+	}
+	else if(email.length < 10)
+	{
+		alert("Email should have minimum of 10 characters");
+		return false;
+	}
+	else if(!email.includes("@") || !email.includes("."))
+	{
+		alert("Invalid Email id must contain @ and .");
+		return false;
+	}
+}
+</script>
+
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="reg.css">
+<title>Login</title>
+</head>
+
+<body>
+<form action="searchPswd" onSubmit="validation()" name="f1" method="get">
+<div class="a">
+<h2>Login Here</h2>
+</div>
+<table align="center">
+
+<tr><td><h1>Email ID:</h1></td><td><input type="text" name="emailid" placeholder="Enter Email Id"><br></td></tr>
+<tr><td><h1>Password :</h1></td><td><input type="password" name="pswd" placeholder="Enter Password"><br></td></tr>
+
+<tr><td><button class="b">Submit</button></td></tr>
+</table>
+</form>
+</body>
+
+</html>
